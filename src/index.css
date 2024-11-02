@@ -1,68 +1,74 @@
+/* Tüm uygulama genelinde kullanılan temel stiller ve değişkenlerin ayarlandığı kök ayarlar */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Genel yazı tipi */
+  line-height: 1.5; /* Satır yüksekliği */
+  font-weight: 400; /* Yazı kalınlığı */
+  
+  color-scheme: light dark; /* Renk şeması tercihi */
+  color: rgba(255, 255, 255, 0.87); /* Yazı rengi, hafif şeffaf beyaz */
+  background-color: #242424; /* Koyu arka plan rengi */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none; /* Tarayıcı yazı stilinin değiştirilmesini önler */
+  text-rendering: optimizeLegibility; /* Yazı okunabilirliğini artırır */
+  -webkit-font-smoothing: antialiased; /* Yazı kenarlarını daha düzgün gösterir */
+  -moz-osx-font-smoothing: grayscale; /* MacOS için yazı kenarlarını düzeltir */
 }
 
+/* Linkler için genel stil */
 a {
-  font-weight: 500;
-  color: #00ea10;
-  text-decoration: inherit;
+  font-weight: 500; /* Link yazı kalınlığı */
+  color: #00ea10; /* Link rengi */
+  text-decoration: inherit; /* Metin dekorasyonu */
 }
 a:hover {
-  color: #00e42e;
+  color: #00e42e; /* Link üzerine gelindiğinde renk değişimi */
 }
 
+/* Ana gövde için stil */
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  margin: 0; /* Varsayılan kenar boşluklarını sıfırlar */
+  display: flex; /* İçeriği ortalamak için flexbox kullanır */
+  place-items: center; /* Yatay ve dikey olarak ortalar */
+  min-width: 320px; /* Minimum genişlik */
+  min-height: 100vh; /* Sayfa yüksekliği */
 }
 
+/* Başlık (h1) için stil */
 h1 {
-  font-size: 30px;
-  line-height: 1.1;
+  font-size: 30px; /* Başlık yazı boyutu */
+  line-height: 1.1; /* Satır yüksekliği */
 }
 
+/* Genel buton stilleri */
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  border-radius: 8px; /* Buton köşeleri yuvarlatılır */
+  border: 1px solid transparent; /* Kenarlık görünmez olarak başlatılır */
+  padding: 0.6em 1.2em; /* İç boşluk ayarı */
+  font-size: 1em; /* Yazı boyutu */
+  font-weight: 500; /* Yazı kalınlığı */
+  font-family: inherit; /* Yazı tipini miras al */
+  background-color: #1a1a1a; /* Arka plan rengi */
+  cursor: pointer; /* Tıklanabilir işareti */
+  transition: border-color 0.25s; /* Kenar renginin geçiş süresi */
 }
 button:hover {
-  border-color: #00ff0d;
+  border-color: #00ff0d; /* Buton üzerine gelindiğinde kenarlık rengi */
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto -webkit-focus-ring-color; /* Buton odaklanıldığında görünür kenarlık */
 }
 
+/* Tercih edilen renk şeması açık tema olduğunda yapılacak ayarlar */
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #213547; /* Açık temada metin rengi */
+    background-color: #ffffff; /* Açık temada arka plan rengi */
   }
   a:hover {
-    color: #15ff00;
+    color: #15ff00; /* Açık temada link üzerine gelindiğinde renk */
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Açık temada buton arka plan rengi */
   }
 }

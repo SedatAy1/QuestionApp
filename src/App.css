@@ -1,42 +1,52 @@
+/* Ana kapsayıcı (root) ayarları */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: 1280px; /* Maksimum genişlik, 1280 piksel */
+  margin: 0 auto; /* Yatayda ortalama */
+  padding: 2rem; /* İç boşluk ayarı */
+  text-align: center; /* İçerik ortalanır */
 }
 
+/* Logo için stil ayarları */
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  height: 6em; /* Logo yüksekliği */
+  padding: 1.5em; /* İç boşluk ayarı */
+  will-change: filter; /* Gelecekteki değişiklikler için performans iyileştirmesi */
+  transition: filter 300ms; /* Filtre efektinin geçiş süresi */
 }
 
+/* Logo üzerine gelindiğinde uygulanacak filtre efekti */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa); /* Koyu mavi bir gölge efekti */
+}
+
+/* React logosu üzerine gelindiğinde uygulanacak özel filtre efekti */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa); /* React logosuna özel, yeşil bir gölge efekti */
+}
+
+/* Logo döndürme animasyonu tanımı */
 @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Başlangıçta döndürme açısı 0 derece */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Bitişte döndürme açısı 360 derece (tam daire) */
   }
 }
 
+/* Hareket azaltma tercihi yoksa animasyonu uygulama */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+    animation: logo-spin infinite 20s linear; /* Logo döndürme animasyonu sonsuz döngüde 20 saniye süresince */
   }
 }
 
+/* Kart (card) bileşeni için stil ayarları */
 .card {
-  padding: 2em;
+  padding: 2em; /* İç boşluk ayarı */
 }
 
+/* Dokümantasyon bağlantısı için stil ayarları */
 .read-the-docs {
-  color: #888;
+  color: #888; /* Metin rengi, gri tonlarında */
 }
