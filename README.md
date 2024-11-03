@@ -1,4 +1,5 @@
-Question App https://question-nh7fktapo-sedat-ays-projects.vercel.app Bu proje, kullanıcılara 10 sorudan oluşan bir test sunan bir React uygulamasıdır. Her soru, belirli bir süre zarfında cevaplanmalı ve sonrasında kullanıcıya doğru ve yanlış cevap sayıları gösterilecektir.
+## Question App https://gentle-unicorn-a4c172.netlify.app
+Bu proje, kullanıcılara 10 sorudan oluşan bir test sunan bir React uygulamasıdır. Her soru, belirli bir süre zarfında cevaplanmalı ve sonrasında kullanıcıya doğru ve yanlış cevap sayıları gösterilecektir.
 
 Özellikler Teste Başla Butonu: Giriş ekranında "Teste Başla" butonu bulunur. Bu buton, id değeri "start" olarak atanmıştır ve kullanıcıya test hakkında bilgilendirme içerir. Süre Yönetimi: Her soru ekranda maksimum 30 saniye görünür. İlk 4 saniyede cevap şıkları gösterilmez. Geçmişe Dönme Yok: Kullanıcı, geçmiş sorulara geri dönemez. Sonuç Ekranı: Test bitiminde, kullanıcıya doğru ve yanlış sayıları ile her soruya verdiği cevaplar gösterilir. Proje Tasarımı Uygulamanın tasarımı 1400px genişliğinde olup, okunabilirlik ve kullanılabilirlik ön planda tutulmuştur. Sorulara ait görseller, src/pictures klasöründen alınmaktadır.
 
